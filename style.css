@@ -1,0 +1,190 @@
+#header{
+    border: 0.5px solid black;
+    height: 120px;
+}
+
+#body{
+    /* border:0.5px solid black; */
+    height: 1000px;
+}
+
+/* #footer{
+    border:0.5px solid black;
+    height: 100px;
+    background-color: black;
+} */
+
+.nav{
+    list-style-type:none ;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+li a{
+    width: 100px;
+    padding: 8px;
+    color: black;
+    background-color: bisque;
+    border: 0.5px solid blue;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: black;
+    color: azure;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap:50px;
+    /* border: 0.5px solid black; */
+}
+
+
+
+
+.products li{
+    width: 200px;
+    height: 200px;
+    /* border: 0.5px solid black; */
+    border-radius: 20px;
+    list-style-type: none;
+    position: relative;
+    background-color: rgb(235, 240, 240);
+}
+
+
+
+
+.products li:hover,.snack li:hover,.hot-drink li:hover {
+  -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); 
+}
+
+
+
+/* .img1:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1); 
+} */
+
+
+.img1{
+    height:150px;
+    width: 200px;
+    border-radius: 20px 20px 0px 0px;
+   
+  
+}
+
+.img1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.pro-info{
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    width: 200px;
+    /* border: 0.5px solid black; */
+    border-radius: 0px 0px 20px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+   
+}
+
+#prod-1{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    
+}
+
+.pro-info span{
+    font-size: small;
+     /* border: 0.5px solid black; */
+     margin-left: 20px;
+     width: 150px;
+}
+
+.snack,.hot-drink{
+
+    display: flex;
+    gap:50px;
+    margin-top: 50px;
+    list-style-type: none;
+}
+
+
+#footer{
+    width:100%;
+    height: 0;
+    position:fixed;
+    z-index: 1;
+    bottom: 0;
+    left:0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(235, 235, 235);
+    border: 0.5px solid black;
+    transition: 0.5s;
+    overflow-y: hidden;
+    /* padding-bottom: 60px;    */
+    
+}
+
+
+/* .sidenav .closebtn {
+  position: absolute;
+  right: 0;
+  top: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+ */
+
+/* #footer {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+} */
+
+.closebtn{
+    height: 50px;
+    width: 100px;
+    color: white;
+    float: right;
+    margin-right: 30px;
+    background-color: tomato;
+    border-radius: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    text-decoration: none;
+}
+
+
+.cart-info{
+    margin-left: 40px;
+}

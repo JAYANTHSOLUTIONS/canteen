@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="home">
+
+        <div id="header">
+
+            <h1>Welcome To UCEK Canteen</h1>
+            <ul class="nav">
+                <li ><a href="#home">Home</a></li>
+                <li ><a href="#home">Categories</a></li>
+                <li ><a href="#home">about</a></li>
+                <li ><a href="#home">Contact</a></li>
+            </ul>
+
+        </div>
+        <div id="body">
+
+            <ul  class="products">
+                <li style="cursor: pointer;" onclick="cart(this)" class="prod-1">
+                    <div class="img1">
+
+                        <img alt="ice" src="image/vannila.png">
+                        
+                    </div>
+                    <div class="pro1">
+                        <div class="pro-info">
+                            <span><b>Product:</b> Vanilla cone</span>
+                            <span class="price"><b>Price:</b> ₹15</span>    
+                        </div>
+                    </div> 
+
+                </li>
+
+
+                <li onclick="cart(this)" class="pro-1">
+                     <div class="img1">
+
+                        <img alt="ice" src="image/straw.jpg">
+                        
+                    </div>
+                    <div class="pro1">
+                        <div class="pro-info">
+                            <span><b>Product:</b> Strawberry Cone</span>
+                            <span><b>Price:</b> ₹15</span>    
+                        </div>
+                    </div> 
+                </li>
+                <li onclick="cart(this)" class="pro-1">
+                     <div class="img1">
+
+                        <img alt="ice" src="image/choco.jpg">
+                        
+                    </div>
+                    <div class="pro1">
+                        <div class="pro-info">
+                            <span><b>Product:</b> Choco Cone</span>
+                            <span><b>Price:</b> ₹25</span>    
+                        </div>
+                    </div> 
+                </li>
+                <li onclick="cart(this)" class="pro-1"> 
+                    <div class="img1">
+
+                        <img alt="ice" src="https://i.pinimg.com/1200x/e0/ab/fe/e0abfeaa456379064ab4e31ef5bc24ac.jpg">
+                        
+                    </div>
+                    <div class="pro1">
+                        <div class="pro-info">
+                            <span><b>Product:</b> Arabian Cone</span>
+                            <span><b>Price:</b> ₹25</span>    
+                        </div>
+                    </div> 
+                </li>
+                <li onclick="cart(this)" class="pro-1">
+                     <div class="img1">
+
+                        <img alt="ice" src="image/choco-bar-2.jpg">
+                        
+                    </div>
+                    <div class="pro1">
+                        <div class="pro-info">
+                            <span><b>Product:</b> choco Cone</span>
+                            <span><b>Price:</b> ₹10</span>    
+                        </div>
+                    </div> 
+                </li>
+                <li  onclick="cart(this)" class="pro-1">
+                    
+                     <div class="img1">
+
+                        <img alt="ice" src="https://i.pinimg.com/736x/12/11/02/121102f1b232cd2b1aac6810d879ea1d.jpg">
+                        
+                    </div>
+                    <div class="pro1">
+                        <div class="pro-info">
+                            <span><b>Product:</b> samosa</span>
+                            <span><b>Price:</b> ₹10</span>    
+                        </div>
+                    </div> 
+                </li>
+                <li onclick="cart(this)" class="pro-1">
+
+                     <div class="img1">
+
+                        <img alt="ice" src="https://i.pinimg.com/736x/6c/fa/24/6cfa24388d6ddc802542a9a4695789f7.jpg">
+                        
+                    </div>
+                    <div class="pro1">
+                        <div class="pro-info">
+                            <span><b>Product:</b> Masal Vadai</span>
+                            <span><b>Price:</b> ₹10</span>    
+                        </div>
+                    </div> 
+
+                </li>
+                <li onclick="cart(this)" class="pro-1">
+                         <div class="img1">
+
+                        <img alt="ice" src="image/bajji.jpg">
+                        
+                    </div>
+                    <div class="pro1">
+                        <div class="pro-info">
+                            <span><b>Product:</b> Bajji</span>
+                            <span><b>Price:</b> ₹8</span>    
+                        </div>
+                    </div> 
+
+                </li>
+                <li onclick="cart(this)" class="pro-1">
+                     <div class="img1">
+
+                        <img alt="ice" src="image/bonda.jpg">
+                        
+                    </div>
+                    <div class="pro1">
+                        <div class="pro-info">
+                            <span><b>Product:</b> Bonda</span>
+                            <span><b>Price:</b> ₹8</span>    
+                        </div>
+                    </div> 
+                </li>
+
+            </ul>
+
+
+
+
+            <ul  class="snack">
+                <li onclick="cart(this)" class="pro-1">
+                    <div class="img1">
+
+                        <img alt="ice" src="https://i.pinimg.com/736x/f1/54/ec/f154ec2164d3e437b9dcd1769576eee4.jpg">
+                        
+                    </div>
+                    <div class="pro1">
+                        <div class="pro-info">
+                            <span><b>Product:</b> Biscut</span>
+                            <span><b>Price:</b> ₹10</span>    
+                        </div>
+                    </div> 
+
+                </li>
+
+
+                <li onclick="cart()" class="pro-1">
+                    <div class="img1">
+
+                        <img alt="ice" src="https://m.media-amazon.com/images/I/619kINLsafL.jpg">
+                        
+                    </div>
+                    <div class="pro1">
+                        <div class="pro-info">
+                            <span><b>Product:</b> Murukku</span>
+                            <span><b>Price:</b> ₹20</span>    
+                        </div>
+                    </div> 
+
+                </li>
+
+
+                <li onclick="cart()" class="pro-1">
+                    <div class="img1">
+
+                        <img alt="ice" src="https://www.jiomart.com/images/product/original/491706430/nabati-richoco-cocoa-cream-wafer-biscuits-28-g-product-images-o491706430-p590310584-0-202507241354.jpg?im=Resize=(1000,1000)">
+                        
+                    </div>
+                    <div class="pro1">
+                        <div class="pro-info">
+                            <span><b>Product:</b> Wafer</span>
+                            <span><b>Price:</b> ₹10</span>    
+                        </div>
+                    </div> 
+
+                </li>
+
+
+
+            </ul>
+
+
+
+
+             <ul  class="hot-drink">
+                <li onclick="cart()" class="pro-1">
+                    <div class="img1">
+
+                        <img alt="ice" src="https://i.pinimg.com/1200x/ac/62/43/ac624326fc78ecf63441c6e8f13676a7.jpg">
+                        
+                    </div>
+                    <div class="pro1">
+                        <div class="pro-info">
+                            <span><b>Product:</b> Tea</span>
+                            <span><b>Price:</b> ₹10</span>    
+                        </div>
+                    </div> 
+
+                </li>
+
+
+                <li onclick="cart(this)" class="pro-1">
+                    <div class="img1">
+
+                        <img alt="ice" src="https://i.pinimg.com/736x/c1/ba/26/c1ba263e6a686b4a96d0a1472b3a9834.jpg">
+                        
+                    </div>
+                    <div class="pro1">
+                        <div class="pro-info">
+                            <span><b>Product:</b> Coffee</span>
+                            <span><b>Price:</b> ₹20</span>    
+                        </div>
+                    </div> 
+
+                </li>
+            </ul>
+  
+
+
+        </div>
+
+        
+
+        <div id="footer">
+
+            
+
+
+        </div>
+    
+
+
+    </div>
+
+
+
+<script>
+    
+    function cart(element){
+
+        
+        const infoSpans = element.querySelectorAll('.pro-info span');
+        let priceText = infoSpans[1].innerText;       
+        let quantity = 1;
+        const productText = infoSpans[0].innerText;
+        const product = productText.replace('Product:','');
+        let price = priceText.replace('Price: ₹', '');
+        price = Number(price) * quantity;
+
+
+        
+
+        console.log("Selected Price:", price);
+
+        let cont = document.getElementById('footer');
+        cont.innerHTML= `<span class="cart-info">product : ${product}<span><br><span class='cart-info'>Price:₹${price} <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close</a>` ;
+        openNav()
+        quantity =0;
+        // alert("Added to cart. Price: ₹" + price);
+        
+    }
+
+    function openNav() {
+  document.getElementById("footer").style.height = "100px";
+}
+
+function closeNav() {
+  document.getElementById("footer").style.height = "0";
+}
+
+
+</script>
+
+    
+</body>
+</html>
