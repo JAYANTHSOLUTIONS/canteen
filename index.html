@@ -281,7 +281,7 @@
         console.log("Selected Price:", price);
 
         let cont = document.getElementById('footer');
-        cont.innerHTML= `<span class="cart-info">product : ${product}<span><br><span class='cart-info'>Price:₹${price} <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close</a>` ;
+        cont.innerHTML= `<span class="cart-info">product : ${product}<span><br><span class='cart-info'>Price:₹${price}</span><btn style="cursor:pointer;" class='addCart'>Cart</btn> <btn href="javascript:void(0)" style="cursor:pointer;" class="closebtn" onclick="closeNav()">Close</btn>` ;
         openNav()
         quantity =0;
         // alert("Added to cart. Price: ₹" + price);
