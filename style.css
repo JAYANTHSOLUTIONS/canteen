@@ -198,3 +198,89 @@ li a:hover {
         grid-template-columns: repeat(1, 1fr); /* 1 item per row */
     }
 }
+
+
+
+#sidebar {
+
+
+
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fffbfb;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+
+}
+
+
+
+#sidebar #btnfoot{
+    border: 0.5px solid black;
+    bottom: 10px;
+    height: 50px;
+    position: relative;
+    display: block;
+    width: 50%;  
+    
+}
+
+#sidebar btn{
+
+
+    bottom: 0;
+    border: 0.5px solid black;
+    margin-right: 20px;
+
+}
+
+#btnfoot btn{
+    float: right;
+    margin-right: 50px;
+
+}
+
+.listim{
+
+    width:80px;
+    height:80px ;
+    /* border: 0.5px solid black; */
+}
+
+.clis{
+    display: flex;
+    height: 80px;
+    width:100%;
+     /* border: 0.5px solid black; */
+}
+
+.cov{
+
+    /* border:0.5px solid black; */
+    width:78%;
+    display: block;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.clis{
+    border: 0.5px solid black;
+    display: block;
+    width:250px;
+}
+
+.fix{
+    margin-top: 400px;
+    left: 0;
+    bottom: 10px;
+    border: 0.5px solid black;
+    position: fixed;
+}

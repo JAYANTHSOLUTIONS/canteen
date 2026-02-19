@@ -10,6 +10,7 @@
 <body>
 
     <div class="home">
+        
 
         <div id="header">
 
@@ -22,7 +23,26 @@
             </ul>
 
         </div>
-        <div id="body">
+        
+        <div id="sidebar">
+
+            
+
+                <div id="list"></div>
+
+            <div class="fix">
+                <btn  class="pay" id="pay">pay</btn>
+                <btn onclick="closeSide()" class="dec">Decline</btn>
+
+            </div>
+           
+
+            
+
+        </div>
+
+
+        <div onclick="close()" id="body">
 
             <ul  class="products">
                 <li style="cursor: pointer;" onclick="cart(this)" class="prod-1">
@@ -264,16 +284,40 @@
 
 <script>
     
+    let upprice =0;
+     let group = [];
+     let img;
+     let price;
+     let product;
+
+    // let post =  `<div class="clis">
+    //         <img class="listim" alt="proim" src= ${img}>
+    //         <div class="cov"><li class="cart-info">product : ${product}</li>
+    //         <li class='cart-info'>Price:₹${price}</li></br>
+    //         </div>
+    //         <span>total:${upprice}</span>`;
+
+
+
     function cart(element){
 
-        
+        let li = element.querySelectorAll(".img1 img");
+        console.log(li)
+        img = li[0].src;
+        console.log(img)
+
+
         const infoSpans = element.querySelectorAll('.pro-info span');
         let priceText = infoSpans[1].innerText;       
         let quantity = 1;
         const productText = infoSpans[0].innerText;
-        const product = productText.replace('Product:','');
-        let price = priceText.replace('Price: ₹', '');
+        product = productText.replace('Product:','');
+        price = priceText.replace('Price: ₹', '');
         price = Number(price) * quantity;
+
+        buy(price);
+
+
 
 
         
@@ -281,20 +325,109 @@
         console.log("Selected Price:", price);
 
         let cont = document.getElementById('footer');
-        cont.innerHTML= `<span class="cart-info">product : ${product}<span><br><span class='cart-info'>Price:₹${price}</span><btn style="cursor:pointer;" class='addCart'>Cart</btn> <btn href="javascript:void(0)" style="cursor:pointer;" class="closebtn" onclick="closeNav()">Close</btn>` ;
+        cont.innerHTML= `<span class="cart-info">product : ${product}<span><br>
+            <span class='cart-info'>Price:₹${price}</span>
+             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <btn style="cursor:pointer;" class='addCart' onclick = "addtoCart()" >Cart</btn>
+            <btn href="javascript:void(0)" style="cursor:pointer;" class="closebtn" onclick="openSide()">Buy</btn>` ;
+
+
         openNav()
         quantity =0;
         // alert("Added to cart. Price: ₹" + price);
+
+        //  let post = document.getElementById('list');
+        //  post.innerHTML = `<div class="clis">
+        //     <img class="listim" alt="proim" src= ${img}>
+        //     <div class="cov"><li class="cart-info">product : ${product}</li>
+        //     <li class='cart-info'>Price:₹${price}</li></br>
+        //     </div>
+        //     <span>total:${upprice}</span>`;
+
+        // console.log(group);
+
+        addtoCart();
+
+        
         
     }
 
+
+
+    function buy(price){
+
+        ch = Number(price);
+        upprice =  upprice+=ch;
+
+    }
+
+
+    function addtoCart(){
+       
+
+
+         let post =  `<div class="clis">
+            <img class="listim" alt="proim" src= ${img}>
+            <div class="cov"><li class="cart-info">product : ${product}</li>
+            <li class='cart-info'>Price:₹${price}</li></br>
+            </div>
+            <span>total:${upprice}</span></br>`;
+
+
+        
+        group.push(post);
+        console.log(group);
+
+        let inlist= document.getElementById('list')
+        inlist.innerHTML = group.join('');
+        // let uplist = inlist.innerHtml = `group`;
+        // console.log(uplist)
+
+
+
+    }
+
+
+    
+
+
+
+function reset(){
+    upprice = 0;
+}
+
+
+
     function openNav() {
   document.getElementById("footer").style.height = "100px";
+  closeSide();
+  
+}
+
+function openSide(){
+    document.getElementById('sidebar').style.width = "50%";
+    closeNav();
+    
 }
 
 function closeNav() {
   document.getElementById("footer").style.height = "0";
 }
+
+function closeSide(){
+    document.getElementById("sidebar").style.width = "0";
+    // upprice = "";
+    
+}
+
+
+function close(){
+    closeNav();
+    closeSide();
+}
+
+
+
 
 
 </script>
